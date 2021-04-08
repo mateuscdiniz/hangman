@@ -1,14 +1,14 @@
 # hangman
 Hangman game using React, Node and Mongo
 
-# FRONT-END
+# FRONTEND folder
 npm install
 
 npm start
 
 URL: localhost:3000
 
-# BACK-END
+# BACKEND folder
 npm install
 
 npm start
@@ -27,9 +27,9 @@ localhost:3000/ranking
 
  # OBS: Create .env file in "backend" folder
 
-SERVER_PORT= 5000
+SERVER_PORT = 5000
 
-DATABASE_URL=mongodb://localhost/scale
+DATABASE_URL = mongodb://localhost/hangman
 
 # BODY
 
