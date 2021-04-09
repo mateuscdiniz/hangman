@@ -20,6 +20,7 @@ app.use(express.json()); // req.body
 app.use("/game", require("./controllers/player-controller"));
 app.use("/ranking", require("./controllers/player-controller"));
 
+// Connect to DB
 console.log("Database connected ...");
 db.connect(() => {
   console.log("successfully connected to the database");
