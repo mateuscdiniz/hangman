@@ -3,7 +3,7 @@ import React from "react";
 function NaoEncontrada() {
   return (
     <div>
-      <h1>Página não encontrada</h1>
+      <h1>Page not found!</h1>
     </div>
   );
 }

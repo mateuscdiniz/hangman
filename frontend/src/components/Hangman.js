@@ -12,7 +12,7 @@ import step6 from "../images/6.jpg";
 class Hangman extends Component {
   static defaultProps = {
     maxWrong: 6,
-    images: [step0, step1, step2, step3, step4, step5, step6,],
+    images: [step0, step1, step2, step3, step4, step5, step6],
   };
 
   constructor(props) {
@@ -39,9 +39,8 @@ class Hangman extends Component {
   }
 
   generateButtons() {
-    return "abcdefghjklmnopqrstuvwxyz".split("").map((letter) => (
+    return "abcdefghijklmnopqrstuvwxyz".split("").map((letter) => (
       <button
-        class="btn btn-lg btn-primary m-2"
         key={letter}
         value={letter}
         onClick={this.handleGuess}
@@ -74,23 +73,19 @@ class Hangman extends Component {
     }
 
     return (
-      <div className="Hangman container">
-        <h1 className="text-center">Hangman</h1>
-
-        <div className="float-right">
+      <div>
+        <h1>Hangman</h1>
+        <div>
           Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
-          
         </div>
-        <div className="text-center">
+        <div>
           <img src={this.props.images[this.state.mistake]} alt="" />
         </div>
-        <div className="text-center">
+        <div>
           <p>Guess the Colors:</p>
           <p>{!gameOver ? this.guessedWord() : this.state.answer}</p>
           <p>{gameStat}</p>
-          <button className="btn btn-info" onClick={this.resetButton}>
-            Reset
-          </button>
+          <button onClick={this.resetButton}>Reset</button>
         </div>
       </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Hangman from "./components/Hangman";
 import Ranking from "./components/Ranking";
-import NaoEncontrada from "./components/NaoEncontrada";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Ranking />
         </Route>
         <Route path="*">
-          <NaoEncontrada />
+          <NotFound />
         </Route>
       </Switch>
     </Router>

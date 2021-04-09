@@ -4,7 +4,7 @@ var colors = [
   "yellow",
   "blue",
   "beige",
-  "gray",
+  "grey",
   "gold",
   "orange",
   "brown",
