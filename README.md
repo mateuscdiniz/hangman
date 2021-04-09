@@ -36,3 +36,9 @@ DATABASE_URL = mongodb://localhost/hangman
 {
   "name":"mateus"
 }
+
+# DOCKER
+
+1. docker-compose build
+2. docker-compose up
+3. URL: localhost:3000
